@@ -29,7 +29,7 @@ To get a local copy of this project, follow these steps:
 
 ## Práctica web
 
-Pincha aquí para ver la práctica:
+Accede aquí para ver la práctica:
 
 1. Clone the repo:
    ```bash
