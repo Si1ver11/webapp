@@ -5,7 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.texto {
+    font-size: 16px;
+    line-height: 1.5;
+}
 body {
     font-family: Arial, sans-serif;
     color: #3B3634;
