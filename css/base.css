@@ -13,14 +13,14 @@ body {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     .contenedor {
-        max-width: 800px; 
+        max-width: 1800px; 
         float: left;      
         margin-right: 20px; 
         padding: 20px;    
     }
     
     .texto {
-        font-size: 16px;  
+        font-size: 32px;  
         line-height: 1.5; 
     }
     }
