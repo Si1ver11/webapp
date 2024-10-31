@@ -26,4 +26,4 @@ To get a local copy of this project, follow these steps:
    ```bash
    git clone https://github.com/Si1ver11/webapp
 
-
+You can view the practice web site at: [C:\Users\Alumno\Desktop\webapp\Practica_webs\someoutstandingwebs.html](C:\Users\Alumno\Desktop\webapp\Practica_webs\someoutstandingwebs.html)
