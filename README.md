@@ -33,4 +33,4 @@ Pincha aquí para ver la práctica:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/Si1ver11/webapp\Practica_webs\someoutstandingwebs.html
+   git clone https://github.com/Si1ver11/webapp\someoutstandingwebs.html
