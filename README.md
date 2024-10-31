@@ -4,7 +4,7 @@
 
 ## Demo
 
-You can view the live site at: [https://ruvebal-udit.github.io/web-fundamentals/](https://ruvebal-udit.github.io/web-fundamentals/)
+You can view the live site at: [https://github.com/Si1ver11/webapp](https://github.com/Si1ver11/webapp)
 
 ## Features
 
@@ -24,6 +24,6 @@ To get a local copy of this project, follow these steps:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/ruvebal-udit/web-fundamentals.git
+   git clone https://github.com/Si1ver11/webapp
 
 
