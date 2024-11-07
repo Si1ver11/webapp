@@ -1,0 +1,78 @@
+/* Estilos generales para la página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.error-container {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.error-box {
+    background-color: #34495e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    transform: scale(0.8);
+    animation: zoomIn 0.6s forwards;
+}
+
+.error-code {
+    font-size: 120px;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    color: #e74c3c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    color: #ecf0f1;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
