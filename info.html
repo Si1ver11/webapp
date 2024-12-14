@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Circuito F1 Madrid</title>
+    <title>Información - Circuito F1 Madrid</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
@@ -19,22 +19,23 @@
             padding: 10px 20px;
             background-color: #111111;
         }
-        .main-banner {
-            width: 100%;
-            height: 500px;
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+        .info-image-placeholder {
+            width: 60%;
+            height: 600px;
             background-color: #cccccc;
-            margin: 0;
+            border-radius: 10px;
         }
-        .main-text {
-            text-align: center;
-            margin: 20px auto;
-        }
-        .main-text h1 {
-            font-size: 3em;
-            color: #D8232A;
-        }
-        .main-text p {
-            font-size: 1.5em;
+        .info-text {
+            width: 35%;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: right;
         }
     </style>
 </head>
@@ -49,14 +50,15 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="main-banner">
-            <!-- COMENTARIO: Reemplaza este rectángulo con una imagen del Circuito F1 -->
-        </div>
-        <section class="main-text">
-            <h1>Bienvenidos al Circuito de Fórmula 1 de Madrid</h1>
-            <p>Descubre el circuito más emocionante y moderno de España. ¡Compra tus entradas ahora!</p>
-        </section>
+    <main class="info-section">
+        <!-- COMENTARIO: Reemplaza este rectángulo con una imagen grande del Circuito o IFEMA -->
+        <div class="info-image-placeholder"></div>
+        <article class="info-text">
+            <h1>Información del Circuito de Fórmula 1</h1>
+            <p>El nuevo circuito de Fórmula 1 en Madrid es uno de los proyectos más ambiciosos de la ciudad. Diseñado para
+            ofrecer una experiencia única tanto para los pilotos como para los espectadores, combina innovación y sostenibilidad,
+            consolidando a Madrid como una capital del deporte motor.</p>
+        </article>
     </main>
 </body>
 </html>

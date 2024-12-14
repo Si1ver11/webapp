@@ -1,169 +1,307 @@
-/* Basic reset for consistent margins and paddings */
-           
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+	overflow: hidden;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #3B3634;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    .contenedor {
-        max-width: 1800px; 
-        float: left;      
-        margin-right: 20px; 
-        padding: 20px;    
-    }
-    
-    .texto {
-        font-size: 32px;  
-        line-height: 1.5; 
-    }
-    }
+	font-family: 'Helvetica Neue', sans-serif;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--text-sm);
+	line-height: var(--line-height-sm);
+}
 
-    header,
-    footer {
-            background-color: #a83131;
-            color: rgb(255, 255, 255);
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 1fr 2fr 2fr;
-            gap: 10px;
-        }
+.theme {
+	min-height: 100vh;
+	transition: color 0.3s, background-color 0.3s;
+	background-color: var(--background);
+	color: var(--secondary-foreground);
+}
 
-    header div,
-    footer div {
-            background-color: #a83131;
-            padding: 10px;
-            text-align: center;
-        }
+/*  When the body has display: flex;
+    its children (header, footer, and main) become flex items. 
+    Flex items do not expand to fill their container's width
+    unless you explicitly set their width.
+*/
 
-    main {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-        }
+main {
+	overflow-y: auto;
+	/* Enable scrolling for content */
+	scroll-snap-type: y mandatory;
+	/* Enable snapping in the vertical direction */
+	scroll-behavior: smooth;
+	/* Enable smooth scrolling */
+}
 
-    .grid-item {
-            background-color: rgb(29, 29, 29);
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
+header,
+footer {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	background-color: var(--secondary);
+	color: var(--secondary-foreground);
+	gap: 10px;
+	width: 100%;
+	z-index: 10;
+}
 
-    header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px 40px;
-            background-color: #2b2b2b;
-            /* Mid-tone background for header */
-    }
+footer {
+	bottom: 0;
+	width: 100%;
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+	height: var(--footer-height);
+}
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            color: #424242;
-        }
+header {
+	top: 0;
+	width: 100%;
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+	height: var(--header-height);
+}
 
-        a {
-            color: #424242;
-        }
+header div,
+footer div {
+	background-color: var(--primar-backgroundy);
+	padding: 10px;
+	text-align: center;
+	display: block;
+}
 
-        article {
-            margin-bottom: 40px;
-            background-color: #B5A79F;
-            /* Mid-tone background for sections */
-            padding: 20px 40px;
-            /* Lateral padding */
-            border-radius: 10px;
-            color: #3B3634;
-            /* Darker text within sections */
-        }
+/* Headings */
+h1 {
+	color: var(--foreground);
+	font-size: var(--text-2xl);
+	/* Very large display text (Hero headers) */
+	line-height: var(--line-height-2xl);
+	/* Responsive line height */
+	margin-bottom: 1rem;
+	font-weight: 900;
+}
 
-        blockquote {
-            background-color: #ffffff;
-            border-left: 10px solid #ccc;
-            margin: 20px 0;
-            padding: 10px 20px;
-        }
+h2 {
+	/*font-family: 'OCR-A';*/
+	color: var(--primary-foreground);
+	font-size: var(--text-xl);
+	/* Large text for main headings */
+	line-height: var(--line-height-2xl);
+	/* Responsive line height */
+	margin-bottom: 0.75rem;
+	font-weight: 700;
+}
 
-        cite {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #635B58;
-            /* Slightly darker highlight color */
-        }
+h3 {
+	color: var(--destructive);
+	font-size: var(--text-lg);
+	/* Medium heading text */
+	line-height: var(--line-height-lg);
+	/* Responsive line height */
+	margin-bottom: 0.75rem;
+	font-weight: 500;
+}
 
-        p {
-            margin: 15px 0;
-            line-height: 1.8;
-        }
+h4 {
+	font-size: var(--text-base);
+	font-weight: 300;
+}
 
-        .highlight {
-            color: #635B58;
-            /* Slightly darker highlight color */
-        }
+h5 {
+	font-size: var(--text-sm);
+	font-weight: 300;
+}
 
-        .header-container h1 {
-            font-size: 2.5em;
-            color: #3B3634;
-            margin: 0;
-            padding-bottom: 20px;
-            /* Space between the title and the image */
-        }
+h6 {
+	font-size: var(--text-xm);
+	font-weight: 300;
+}
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
+/* Small Text (e.g., captions or footnotes) */
+.small-text {
+	font-size: var(--text-2xs);
+	line-height: var(--line-height-2xs);
+	font-weight: 100;
+}
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
+/* Links */
+a,
+a:active,
+a:visited {
+	text-decoration: underline;
+	color: inherit;
+}
 
-        .toc {
-            text-align: center;
-            margin: 20px 0;
-        }
+em {
+	font-style: italic;
+}
 
-        .toc a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #8C817B;
-            border-radius: 5px;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
+strong {
+	font-weight: 700;
+}
 
-        .toc a:hover {
-            background-color: #635B58;
-        }
+p {
+	margin-bottom: 1rem;
+	color: var(--black);
+}
 
-        .final-section {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #8C817B;
-            color: #FFFFFF;
-        }
+article {
+	margin-bottom: 40px;
+	background-color: var(--card);
+	padding: 20px 40px;
+	border-radius: var(--border-radius);
+	color: var(--destructive);
+	background-color: var(--foreground);
+}
 
-        .final-section a {
-            display: block;
-            margin: 10px 0;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
+blockquote {
+	position: relative;
+	padding-left: 0.25em; /* Adds space between text and border */
+	border-left: var(--border-radius) solid var(--border); /* Left border */
+	margin: 1em 0 0 calc(0.25em + 5px * -1);
+}
 
-        .final-section a:hover {
-            color: #B5A79F;
-        }
+p,
+li,
+figcaption,
+pre {
+	font-family: 'adobe-caslon-pro';
+	font-size: var(--text-xs);
+	line-height: var(--line-height-xs);
+	margin-bottom: 1rem;
+}
+
+figcaption,
+cite {
+	font-family: 'adobe-caslon-pro';
+	font-size: var(--text-2xs);
+	line-height: var(--line-height-2xs);
+	margin-bottom: 2.5rem;
+	margin-top: 1rem;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	position: relative;
+	padding-left: 1em; /* Adds space for the hyphen */
+}
+
+article ul li::before {
+	content: '—'; /* Inserts hyphen before each list item */
+	position: absolute;
+	left: 0;
+	color: var(--accent); /* Color of the hyphen */
+	font-weight: bold;
+}
+
+.toc ul li::before {
+	content: '—'; /* Inserts hyphen before each list item */
+	position: absolute;
+	left: 0;
+	color: var(--accent); /* Color of the hyphen */
+	font-weight: bold;
+}
+
+cite {
+	text-align: left;
+	display: block;
+	margin-top: 10px;
+	color: var(--primary-foreground);
+}
+
+.highlight {
+	color: var(--primary);
+}
+
+.header-container h1 {
+	color: var(--destructive);
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+.toc {
+	text-align: left;
+	margin: 20px 0;
+}
+
+.toc a:hover {
+	background-color: var(--primary);
+}
+
+.final-section {
+	text-align: center;
+	padding: 40px 20px;
+	background-color: var(--muted);
+	color: var(--foreground);
+}
+
+.final-section a {
+	display: block;
+	margin: 10px 0;
+	color: var(--foreground);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.final-section a:hover {
+	color: var(--accent);
+}
+
+/* Style the pre element */
+pre {
+	background: #333;
+	color: #f8f8f2;
+	padding: 10px;
+	border-radius: var(--border-radius);
+	margin: 0 0 1.5rem 0;
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+/* Code Container Styling */
+.code-container {
+	display: flex;
+	background-color: #333;
+	color: #f8f8f2;
+	border-radius: var(--border-radius);
+	padding: 0.75rem;
+	white-space: pre-wrap;
+	overflow-x: auto;
+	cursor: text;
+	user-select: text;
+	box-sizing: border-box;
+}
+
+.code-content {
+	font-family: monospace;
+	white-space: pre-wrap;
+}
+
+.collection-title {
+	font-variant-caps: all-small-caps;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.responsive-image {
+	width: 100%;
+	/* Full width of the container */
+	height: 100%;
+	/* Full height of the container */
+	object-fit: cover;
+	/* Ensures image covers container without changing aspect ratio */
+}
