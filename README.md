@@ -1,10 +1,10 @@
 # My Static Site
 
-Welcome to my static site! This project showcases Web Fundamentals.
+Welcome to my web
 
 ## Demo
 
-You can view the live site at: [https://ruvebal-udit.github.io/webapp/](https://ruvebal-udit.github.io/webapp/)
+You can view the live site at: [https://github.com/Si1ver11/webapp](https://github.com/Si1ver11/webapp)
 
 ## Features
 
@@ -25,7 +25,7 @@ You can view the live site at: [https://ruvebal-udit.github.io/webapp/](https://
 
 - HTML5
 - CSS3
-- JavaScript
+
 
 ## Getting Started
 
@@ -33,6 +33,6 @@ To get a local copy of this project, follow these steps:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/ruvebal-udit/webapp.git
+   git clone https://github.com/Si1ver11/webapp
 
 
