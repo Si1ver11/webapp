@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Awards Section */
+h3 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+/* Contenedor para texto principal */
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contenedor .texto {
+    text-align: justify;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Main Content */
+main ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+main ul li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+/* Links */
+main ul li a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+main ul img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    main ul img {
+        max-width: 100%;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    main ul li {
+        font-size: 1rem;
+    }
+}
