@@ -5,7 +5,6 @@
 [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsi1ver11.github.io%2Fwebapp%2Fsomeoutstandingwebs.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 <br/>
 ## Marcación
-- 
 - Estructura no semántica ni jerarquizada
 - Varios y graves errores estructurales: Error: Start tag body seen but an element of the same type was already open. Error: No space between attributes.
 - Lista li con enlaces a mal estructurada: Error: Element a not allowed as child of element ul in this context. 
