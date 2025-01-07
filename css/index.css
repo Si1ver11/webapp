@@ -58,6 +58,21 @@ body {
     object-fit: cover; /* Recorta y ajusta la imagen para que encaje */
 }
 
+/* Bloque de texto debajo de la imagen */
+.main-text {
+    display: flex; /* Usa flexbox para centrar el contenedor */
+    justify-content: center; /* Centra horizontalmente el texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.text-container {
+    width: 33%; /* Ocupa un tercio del ancho de la pantalla */
+    text-align: justify; /* Justifica el texto a la izquierda */
+    font-size: 1rem; /* Tamaño estándar del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #555; /* Color ligeramente más claro para el texto */
+}
+
 /* Footer */
 footer {
     background-color: #222; /* Fondo oscuro */
