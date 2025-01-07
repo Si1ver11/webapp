@@ -2,33 +2,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404 - Página no encontrada</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres de la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <title>Error 404 - Página no encontrada</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="./css/index.css"> <!-- Enlace a la hoja de estilos principal -->
     <style>
+        /* Estilos específicos para la página de error 404 */
+
         body {
-            background-color: #1D1D1D;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+            display: flex; /* Usa flexbox para centrar contenido */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            margin: 0; /* Elimina márgenes por defecto */
+            background-color: #1D1D1D; /* Fondo oscuro */
+            color: #FFFFFF; /* Texto en blanco */
+            font-family: Arial, sans-serif; /* Fuente general */
+            text-align: center; /* Centra el texto */
         }
+
+        .error-container {
+            max-width: 600px; /* Limita el ancho del contenedor */
+        }
+
+        h1 {
+            font-size: 5rem; /* Tamaño grande para el encabezado */
+            margin: 0; /* Elimina márgenes */
+            color: #D8232A; /* Rojo principal */
+        }
+
+        p {
+            font-size: 1.5rem; /* Tamaño del texto descriptivo */
+            margin: 20px 0; /* Espaciado vertical */
+        }
+
         a {
-            color: #D8232A;
-            text-decoration: none;
-            font-size: 1.2em;
+            color: #FFFFFF; /* Texto de los enlaces en blanco */
+            text-decoration: underline; /* Subrayado para destacar enlaces */
+            font-weight: bold; /* Resalta los enlaces */
+        }
+
+        a:hover {
+            text-decoration: none; /* Elimina el subrayado al pasar el cursor */
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1 style="font-size: 5em;">404</h1>
+    <div class="error-container">
+        <!-- Encabezado del error -->
+        <h1>404</h1> <!-- Título que indica el error -->
+        <!-- Mensaje descriptivo -->
         <p>Lo sentimos, la página que buscas no existe.</p>
-        <a href="index.html">Volver al inicio</a>
+        <!-- Enlace para volver a la página principal -->
+        <p><a href="index.html">Volver a la página principal</a></p>
     </div>
 </body>
 </html>

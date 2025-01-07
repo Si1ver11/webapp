@@ -1,48 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metaetiquetas necesarias para configurar correctamente la página -->
-    <meta charset="UTF-8"> <!-- Define el juego de caracteres utilizado (UTF-8 es estándar para soportar caracteres especiales) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
-    <title>Landing Page - Circuito F1 Madrid</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <!-- Metaetiquetas esenciales -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres (UTF-8 soporta caracteres especiales como tildes) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive -->
+    <title>Landing Page - Circuito F1 Madrid</title> <!-- Título que aparece en la pestaña del navegador -->
 
-    <!-- Enlace a la hoja de estilos principal -->
+    <!-- Enlace al archivo principal de estilos CSS -->
     <link rel="stylesheet" href="./css/index.css">
-
-    <!-- Enlace al favicon (ícono que aparece en la pestaña del navegador) -->
-    <link rel="icon" href="./assets/icons/favicons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Sección del encabezado (header) -->
-    <header>
-        <div class="header-container"> <!-- Contenedor principal del encabezado -->
-            <!-- Logo alineado a la izquierda -->
+    <!-- Encabezado principal -->
+    <header class="header"> <!-- Clase para aplicar estilos específicos al header -->
+        <div class="header-container"> <!-- Contenedor principal para organizar logo y navegación -->
+            <!-- Logo del Circuito -->
             <div class="logo">
-                <!-- COMENTARIO: Cambia 'logo.svg' por la ruta de tu ícono en la carpeta de favicons -->
-                <img src="./assets/icons/logo.svg" alt="Logo del Circuito" />
+                <img src="./assets/icons/logo.svg" alt="Logo del Circuito"> <!-- Imagen del logo del circuito -->
             </div>
-            <!-- Navegación alineada a la derecha -->
-            <nav class="navigation">
+            <!-- Navegación -->
+            <nav class="navigation"> <!-- Navegación con enlaces a otras secciones -->
                 <ul>
-                    <!-- Enlace a la sección de información -->
-                    <li><a href="#">Información</a></li>
-                    <!-- Enlace a la sección de tienda -->
-                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Información</a></li> <!-- Enlace a la sección de información -->
+                    <li><a href="#">Tienda</a></li> <!-- Enlace a la tienda -->
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sección de la imagen principal -->
-    <section class="main-image">
-        <!-- COMENTARIO: Reemplaza 'placeholder.jpg' por la imagen deseada en la carpeta assets/images -->
-        <img src="./assets/images/placeholder.jpg" alt="Imagen principal del Circuito">
+    <!-- Imagen principal -->
+    <section class="main-image"> <!-- Sección para la imagen principal de la landing page -->
+        <img src="./assets/images/placeholder.jpg" alt="Imagen principal del Circuito"> <!-- Imagen de marcador, reemplazar con la deseada -->
     </section>
 
-    <!-- Footer para derechos reservados -->
-    <footer>
-        <p>&copy; 2025 Circuito F1 Madrid. Todos los derechos reservados.</p>
+    <!-- Pie de página -->
+    <footer> <!-- Sección del footer -->
+        <p>&copy; 2025 Circuito F1 Madrid. Todos los derechos reservados.</p> <!-- Derechos reservados -->
     </footer>
 </body>
 </html>
