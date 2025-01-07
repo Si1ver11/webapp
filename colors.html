@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors - Circuito F1 Madrid</title>
+    <link rel="stylesheet" href="./css/theme.css">
+    <style>
+        /* Estilos básicos para mostrar los colores */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .color-name {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Paleta de Colores</h1>
+
+    <div class="color-container">
+        <!-- Cuadro para el color principal -->
+        <div class="color-box" style="background-color: var(--primary-color);">
+            <div class="color-name">--primary-color</div>
+            <div class="color-value">#D8232A</div>
+        </div>
+
+        <!-- Cuadro para el color secundario -->
+        <div class="color-box" style="background-color: var(--secondary-color);">
+            <div class="color-name">--secondary-color</div>
+            <div class="color-value">#1D1D1D</div>
+        </div>
+
+        <!-- Cuadro para el color del texto -->
+        <div class="color-box" style="background-color: var(--text-color);">
+            <div class="color-name">--text-color</div>
+            <div class="color-value">#FFFFFF</div>
+        </div>
+
+        <!-- Cuadro para el color de fondo -->
+        <div class="color-box" style="background-color: var(--background-color);">
+            <div class="color-name">--background-color</div>
+            <div class="color-value">#F4F4F4</div>
+        </div>
+    </div>
+</body>
+</html>
