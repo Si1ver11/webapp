@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +6,14 @@
     <title>Error 404 - Página no encontrada</title> <!-- Título de la pestaña del navegador -->
     <link rel="stylesheet" href="./css/index.css"> <!-- Enlace a la hoja de estilos principal -->
     <style>
+        /* Importar tipografía local */
+        @font-face {
+            font-family: 'RacingSansOne';
+            src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* Estilos específicos para la página de error 404 */
 
         body {
@@ -29,6 +36,7 @@
             font-size: 5rem; /* Tamaño grande para el encabezado */
             margin: 0; /* Elimina márgenes */
             color: #D8232A; /* Rojo principal */
+            font-family: 'RacingSansOne', Arial, sans-serif; /* Usa la fuente local */
         }
 
         p {
