@@ -54,7 +54,7 @@ body {
 /* Imagen principal */
 .main-image img {
     width: 100%; /* Imagen ocupa todo el ancho */
-    height: 400px; /* Altura fija */
+    height: 850px; /* Altura fija */
     object-fit: cover; /* Recorta y ajusta la imagen para que encaje */
 }
 
