@@ -1,45 +1,29 @@
-/* Variables de colores */
-:root {
-    --primary-color: #D8232A; /* Rojo principal */
-    --secondary-color: #1D1D1D; /* Fondo oscuro */
-    --text-color: #ffffff; /* Texto principal blanco */
-    --background-color: #b9b9b9; /* Fondo claro */
-    --accent-color: #4A4A4A; /* Gris para elementos secundarios */
+/* Importar tipografía local */
+@font-face {
+    font-family: 'MiFuenteLocal';
+    src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2'); /* Ruta al archivo WOFF2 */
+    font-weight: normal; /* Peso normal */
+    font-style: normal; /* Estilo normal */
 }
 
-/* Tipografía */
-:root {
-    --font-family-base: 'Arial', sans-serif; /* Fuente base */
-    --font-size-base: 16px; /* Tamaño base del texto */
-    --font-size-large: 1.5rem; /* Tamaño para encabezados grandes */
-    --font-size-small: 0.9rem; /* Tamaño para subtítulos o textos pequeños */
+/* Fuente remota desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplicación de las fuentes */
+body {
+    font-family: 'MiFuenteLocal', 'Roboto', Arial, sans-serif; /* Fuente local primero, luego remota */
 }
 
-/* Espaciados */
+/* Colores temáticos */
 :root {
-    --spacing-small: 10px;
-    --spacing-medium: 20px;
-    --spacing-large: 40px;
+    --primary-color: #D8232A;
+    --secondary-color: #1D1D1D;
+    --text-color: #FFFFFF;
+    --background-color: #F4F4F4;
 }
 
-/* Fondo general */
+/* Aplicar colores del tema */
 body {
     background-color: var(--background-color);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    color: var(--text-color);
-}
-
-/* Encabezados */
-h1, h2, h3 {
-    color: var(--primary-color);
-}
-
-/* Contenedor principal */
-.container {
-    padding: var(--spacing-medium);
-    margin: var(--spacing-medium) auto;
-    max-width: 1200px;
-    background-color: var(--secondary-color);
     color: var(--text-color);
 }
