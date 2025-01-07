@@ -1,62 +1,61 @@
-/* VARIABLES GLOBALES */
-/* Los colores y márgenes se manejarán desde theme.css */
-
-/* ESTILO GENERAL */
+/* Estilos generales */
 body {
     margin: 0; /* Elimina el margen por defecto del navegador */
-    font-family: Arial, sans-serif; /* Fuente básica */
-    background-color: #f4f4f4; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente principal para el texto */
+    background-color: #f4f4f4; /* Color de fondo general */
     color: #333; /* Color del texto */
 }
 
-/* ESTILO DEL HEADER */
+/* Header */
 header {
-    display: flex; /* Alinea elementos horizontalmente */
-    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    display: flex; /* Alinea los elementos en una fila horizontal */
+    justify-content: space-between; /* Logo a la izquierda, navegación a la derecha */
     align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px 20px; /* Márgenes internos: ajustables */
+    padding: 10px 20px; /* Márgenes internos del header */
     background-color: #222; /* Fondo oscuro del header */
-    color: white; /* Color del texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra debajo del header */
+    color: white; /* Color del texto en el header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
 }
 
-/* LOGO DEL HEADER */
+/* Contenedor del logo */
 .logo img {
-    width: 50px; /* Ancho del logo */
-    height: auto; /* Mantiene la proporción */
+    width: 50px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
 }
 
-/* NAVEGACIÓN */
-.navigation ul {
-    list-style: none; /* Elimina los puntos de las listas */
-    display: flex; /* Alinea los enlaces horizontalmente */
-    gap: 20px; /* Espacio entre los enlaces: ajustable */
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina relleno */
+/* Navegación */
+.navigation {
+    display: flex; /* Coloca los enlaces en una fila horizontal */
+    gap: 20px; /* Espaciado entre los enlaces */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    list-style: none; /* Elimina los puntos de lista */
 }
 
+/* Estilos de los enlaces */
 .navigation a {
-    color: white; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado */
+    color: white; /* Texto blanco */
     font-weight: bold; /* Enlaces destacados */
 }
 
+/* Estilo al pasar el cursor */
 .navigation a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
-/* IMAGEN PRINCIPAL */
+/* Imagen principal */
 .main-image img {
-    width: 100%; /* La imagen ocupa todo el ancho */
-    height: 400px; /* Altura fija: ajustable */
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: 400px; /* Altura fija para la imagen */
     object-fit: cover; /* Recorta la imagen para que encaje */
 }
 
-/* FOOTER */
+/* Footer */
 footer {
-    text-align: center; /* Texto centrado */
-    background-color: #222; /* Fondo oscuro */
-    color: white; /* Color del texto */
-    padding: 10px 0; /* Espaciado interno */
-    font-size: 0.9rem; /* Tamaño de texto reducido */
+    text-align: center; /* Centra el texto del footer */
+    background-color: #222; /* Fondo oscuro para el footer */
+    color: white; /* Texto blanco en el footer */
+    padding: 10px 0; /* Espaciado interno del footer */
+    font-size: 0.9rem; /* Tamaño del texto reducido para el footer */
 }
