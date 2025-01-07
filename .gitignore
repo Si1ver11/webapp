@@ -2,7 +2,8 @@
 .DS_Store 
 # Estos archivos son creados automáticamente por macOS para almacenar información sobre el directorio. 
 # No tienen valor en un repositorio de código y deben ser ignorados.
-
+#Ignorar imágenes dentro de la carpeta assets
+/assets/images/*
 # Ignorar la carpeta node_modules
 node_modules
 # Esta carpeta contiene las dependencias instaladas por npm o Yarn.
