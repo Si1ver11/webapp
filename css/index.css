@@ -10,7 +10,7 @@ body {
 .header {
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    padding: 10px 20px; /* Márgenes internos */
+    padding: 10px 30px; /* Márgenes internos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
 }
 
@@ -22,7 +22,7 @@ body {
 
 /* Logo */
 .logo img {
-    width: 60px; /* Tamaño del logo */
+    width: 100px; /* Tamaño del logo */
     height: auto; /* Mantiene la proporción */
 }
 
@@ -54,7 +54,7 @@ body {
 /* Imagen principal */
 .main-image img {
     width: 100%; /* Imagen ocupa todo el ancho */
-    height: 850px; /* Altura fija */
+    height: 840px; /* Altura fija */
     object-fit: cover; /* Recorta y ajusta la imagen para que encaje */
 }
 
