@@ -1,4 +1,19 @@
-.DS_Store
+# Ignorar archivos específicos del sistema operativo macOS
+.DS_Store 
+# Estos archivos son creados automáticamente por macOS para almacenar información sobre el directorio. 
+# No tienen valor en un repositorio de código y deben ser ignorados.
+
+# Ignorar la carpeta node_modules
 node_modules
+# Esta carpeta contiene las dependencias instaladas por npm o Yarn.
+# Es muy pesada y no debería incluirse en el repositorio, ya que se puede regenerar con el archivo package.json.
+
+# Ignorar el archivo de configuración de Prettier (si existe)
 .prettierignore
+# Este archivo se usa para excluir archivos del formateo automático de Prettier.
+# Aunque útil para el desarrollo, no es necesario en el repositorio si no contiene configuraciones esenciales.
+
+# Ignorar la carpeta de configuración específica de Visual Studio Code
 .vscode/
+# Esta carpeta almacena configuraciones personalizadas de VS Code (como extensiones y ajustes de proyecto).
+# Es específica de cada usuario y no debería incluirse en el repositorio para mantenerlo limpio y neutral.

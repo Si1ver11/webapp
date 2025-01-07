@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metaetiquetas esenciales -->
     <meta charset="UTF-8"> <!-- Define el conjunto de caracteres de la página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive -->
     <title>Colors - Circuito F1 Madrid</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="./css/theme.css"> <!-- Enlace a la hoja de estilos del tema -->
+    
+    <!-- Enlace al archivo de estilos del tema -->
+    <link rel="stylesheet" href="./css/theme.css"> <!-- Importa el archivo theme.css -->
+    
     <style>
         /* Estilos específicos para mostrar los colores */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Arial, sans-serif; /* Fuente principal */
+            margin: 20px; /* Espaciado alrededor del contenido */
+            background-color: #f4f4f4; /* Color de fondo claro */
+            color: #333; /* Color del texto */
         }
         
         h1 {
-            text-align: center;
+            text-align: center; /* Centra el título */
         }
 
+        /* Contenedor de las cajas de colores */
         .color-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            display: flex; /* Usa flexbox para alinear elementos */
+            flex-wrap: wrap; /* Permite que los elementos ocupen varias filas */
+            gap: 20px; /* Espaciado entre cajas */
+            justify-content: center; /* Centra las cajas horizontalmente */
         }
 
+        /* Cada caja de color */
         .color-box {
-            width: 150px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+            width: 150px; /* Ancho de la caja */
+            height: 150px; /* Altura de la caja */
+            display: flex; /* Flexbox para alinear el contenido */
+            flex-direction: column; /* Organiza los elementos verticalmente */
+            justify-content: center; /* Centra verticalmente el contenido */
+            align-items: center; /* Centra horizontalmente el contenido */
+            text-align: center; /* Centra el texto */
+            border: 1px solid #ccc; /* Borde claro */
+            border-radius: 8px; /* Bordes redondeados */
         }
 
+        /* Nombre del color */
         .color-name {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #555;
+            margin-top: 10px; /* Espaciado superior */
+            font-size: 0.9rem; /* Tamaño de fuente reducido */
+            color: #555; /* Color gris para el texto */
         }
     </style>
 </head>
 <body>
+    <!-- Título principal -->
     <h1>Paleta de Colores</h1>
 
+    <!-- Contenedor de los colores -->
     <div class="color-container">
+        <!-- Caja para el color primario -->
         <div class="color-box" style="background-color: var(--primary-color);">
-            <div class="color-name">--primary-color</div>
-            <div class="color-value">#D8232A</div>
+            <div class="color-name">--primary-color</div> <!-- Nombre de la variable -->
+            <div class="color-value">#D8232A</div> <!-- Valor hexadecimal del color -->
         </div>
+
+        <!-- Caja para el color secundario -->
         <div class="color-box" style="background-color: var(--secondary-color);">
             <div class="color-name">--secondary-color</div>
             <div class="color-value">#1D1D1D</div>
         </div>
+
+        <!-- Caja para el color del texto -->
         <div class="color-box" style="background-color: var(--text-color);">
             <div class="color-name">--text-color</div>
             <div class="color-value">#FFFFFF</div>
         </div>
+
+        <!-- Caja para el color de fondo -->
         <div class="color-box" style="background-color: var(--background-color);">
             <div class="color-name">--background-color</div>
             <div class="color-value">#F4F4F4</div>
