@@ -2,61 +2,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Circuito F1 Madrid</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            background-color: #1D1D1D;
-            color: white;
-            margin: 0;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #111111;
-        }
-        .main-banner {
-            width: 100%;
-            height: 500px;
-            background-color: #cccccc;
-            margin: 0;
-        }
-        .main-text {
-            text-align: center;
-            margin: 20px auto;
-        }
-        .main-text h1 {
-            font-size: 3em;
-            color: #D8232A;
-        }
-        .main-text p {
-            font-size: 1.5em;
-        }
-    </style>
+    <!-- Metaetiquetas necesarias para configurar correctamente la página -->
+    <meta charset="UTF-8"> <!-- Define el juego de caracteres utilizado (UTF-8 es estándar para soportar caracteres especiales) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <title>Landing Page - Circuito F1 Madrid</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Enlace al favicon (ícono que aparece en la pestaña del navegador) -->
+    <link rel="icon" href="./assets/icons/favicons/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Sección del encabezado (header) -->
     <header>
-        <h1 style="margin: 0;">Circuito F1 Madrid</h1>
-        <nav>
-            <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
-                <li><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></li>
-                <li><a href="informacion.html" style="color: white; text-decoration: none;">Información</a></li>
-                <li><a href="tienda.html" style="color: white; text-decoration: none;">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="main-banner">
-            <!-- COMENTARIO: Reemplaza este rectángulo con una imagen del Circuito F1 -->
+        <div class="header-container"> <!-- Contenedor principal del encabezado -->
+            <!-- Logo alineado a la izquierda -->
+            <div class="logo">
+                <!-- COMENTARIO: Cambia 'logo.svg' por la ruta de tu ícono en la carpeta de favicons -->
+                <img src="./assets/icons/logo.svg" alt="Logo del Circuito" />
+            </div>
+            <!-- Navegación alineada a la derecha -->
+            <nav class="navigation">
+                <ul>
+                    <!-- Enlace a la sección de información -->
+                    <li><a href="#">Información</a></li>
+                    <!-- Enlace a la sección de tienda -->
+                    <li><a href="#">Tienda</a></li>
+                </ul>
+            </nav>
         </div>
-        <section class="main-text">
-            <h1>Bienvenidos al Circuito de Fórmula 1 de Madrid</h1>
-            <p>Descubre el circuito más emocionante y moderno de España. ¡Compra tus entradas ahora!</p>
-        </section>
-    </main>
+    </header>
+
+    <!-- Sección de la imagen principal -->
+    <section class="main-image">
+        <!-- COMENTARIO: Reemplaza 'placeholder.jpg' por la imagen deseada en la carpeta assets/images -->
+        <img src="./assets/images/placeholder.jpg" alt="Imagen principal del Circuito">
+    </section>
+
+    <!-- Footer para derechos reservados -->
+    <footer>
+        <p>&copy; 2025 Circuito F1 Madrid. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
