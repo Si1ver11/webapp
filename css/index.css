@@ -2,15 +2,15 @@
 body {
     margin: 0; /* Elimina el margen por defecto del navegador */
     font-family: Arial, sans-serif; /* Fuente principal para el texto */
-    background-color: #1D1D1D; /* Fondo oscuro general */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #f4f4f4; /* Color de fondo general */
+    color: #333; /* Color del texto */
 }
 
 /* Header */
 .header {
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    padding: 10px 20px; /* Márgenes internos */
+    padding: 10px 30px; /* Márgenes internos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
 }
 
@@ -22,7 +22,7 @@ body {
 
 /* Logo */
 .logo img {
-    width: 60px; /* Tamaño del logo */
+    width: 100px; /* Tamaño del logo */
     height: auto; /* Mantiene la proporción */
 }
 
@@ -35,56 +35,49 @@ body {
     list-style: none; /* Elimina puntos de la lista */
 }
 
+.navigation li {
+    display: inline; /* Asegura que los enlaces estén en línea */
+}
+
 .navigation a {
     text-decoration: none; /* Sin subrayado */
     color: white; /* Texto blanco */
     font-weight: bold; /* Negrita para destacar los enlaces */
+    padding: 5px 10px; /* Espaciado interno de los enlaces */
+    transition: color 0.3s ease; /* Efecto de transición en el hover */
+}
+
+.navigation a:hover {
+    color: #D8232A; /* Color rojo al pasar el cursor */
 }
 
 /* Imagen principal */
 .main-image img {
     width: 100%; /* Imagen ocupa todo el ancho */
-    height: 400px; /* Altura fija */
+    height: 840px; /* Altura fija */
     object-fit: cover; /* Recorta y ajusta la imagen para que encaje */
 }
 
-/* Texto debajo de la imagen principal */
+/* Bloque de texto debajo de la imagen */
 .main-text {
+    display: flex; /* Usa flexbox para centrar el contenedor */
+    justify-content: center; /* Centra horizontalmente el texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.text-container {
+    width: 33%; /* Ocupa un tercio del ancho de la pantalla */
+    text-align: justify; /* Justifica el texto a la izquierda */
+    font-size: 1rem; /* Tamaño estándar del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #555; /* Color ligeramente más claro para el texto */
+}
+
+/* Footer */
+footer {
+    background-color: #222; /* Fondo oscuro */
+    color: white; /* Texto blanco */
     text-align: center; /* Centra el texto */
-    margin: 20px auto; /* Márgenes superior e inferior */
-    width: 60%; /* Ancho del bloque de texto */
-}
-
-.main-text p {
-    text-align: justify; /* Justifica el texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #CCCCCC; /* Color gris claro */
-}
-
-/* Sección de imagen y texto */
-.info-section {
-    display: flex; /* Flexbox para organizar elementos horizontalmente */
-    gap: 20px; /* Espaciado entre imagen y texto */
-    margin: 40px auto; /* Centrado vertical y horizontal */
-    width: 80%; /* Ancho de la sección */
-}
-
-.info-image img {
-    width: 50%; /* Imagen ocupa la mitad del ancho disponible */
-    height: auto; /* Mantiene la proporción */
-}
-
-.info-text {
-    flex: 1; /* Texto ocupa el espacio restante */
-}
-
-.info-text h2 {
-    font-size: 1.8rem; /* Tamaño del título */
-    margin-bottom: 10px; /* Espaciado inferior */
-    color: #FFFFFF; /* Texto blanco */
-}
-
-.info-text p {
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #CCCCCC; /* Texto gris claro */
+    padding: 15px 0; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño de texto reducido */
 }
