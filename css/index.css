@@ -11,7 +11,7 @@ body {
     position: fixed; /* Fija el header en la parte superior */
     top: 0; /* Asegura que esté pegado al borde superior */
     left: 0; /* Alinea el header al borde izquierdo */
-    width: 98%; /* Ocupa todo el ancho */
+    width: 97%; /* Ocupa todo el ancho */
     z-index: 1000; /* Asegura que esté encima del contenido */
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
