@@ -21,14 +21,17 @@ header {
 .logo img {
     width: 50px; /* Tamaño del logo */
     height: auto; /* Mantiene la proporción del logo */
+    display: block; /* Asegura que el logo no tenga espaciado extra */
 }
 
 /* Navegación */
 .navigation {
     display: flex; /* Coloca los enlaces en una fila horizontal */
+    justify-content: flex-end; /* Alínea los enlaces al extremo derecho */
+    align-items: center; /* Alinea verticalmente los enlaces con el logo */
     gap: 20px; /* Espaciado entre los enlaces */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen extra */
+    padding: 0; /* Sin relleno adicional */
     list-style: none; /* Elimina los puntos de lista */
 }
 
@@ -41,7 +44,7 @@ header {
 
 /* Estilo al pasar el cursor */
 .navigation a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    text-decoration: underline; /* Añade un subrayado al pasar el cursor */
 }
 
 /* Imagen principal */
