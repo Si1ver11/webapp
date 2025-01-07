@@ -2,65 +2,53 @@
 <html lang="es">
 <head>
     <!-- Metaetiquetas esenciales -->
-    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres (UTF-8 soporta caracteres especiales como tildes) -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive -->
-    <title>Circuito F1 Madrid</title> <!-- Título que aparece en la pestaña del navegador -->
+    <title>Circuito F1 Madrid</title> <!-- Título de la pestaña del navegador -->
 
-    <!-- Enlace a fuentes remotas desde Google Fonts -->
+    <!-- Fuentes y estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Enlace al archivo principal de estilos CSS -->
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/theme.css"> <!-- Tema CSS con tipografías -->
-    <!-- Favicon estándar para navegadores -->
+    <link rel="stylesheet" href="./css/index.css"> <!-- Archivo de estilos principal -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicons/favicon-96x96.png">
-    <link rel="icon" href="./assets/icons/favicons/favicon.ico">
-
-    <!-- Favicon para navegadores con soporte de SVG -->
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicons/favicon.svg">
-
-    <!-- Apple Touch Icon para dispositivos iOS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicons/apple-touch-icon.png">
-
-    <!-- Manifest para aplicaciones web progresivas -->
-    <link rel="manifest" href="./manifest.json">
-
-
 </head>
 <body>
-    <!-- Encabezado principal -->
-    <header class="header"> <!-- Clase para aplicar estilos específicos al header -->
-        <div class="header-container"> <!-- Contenedor principal para organizar logo y navegación -->
-            <!-- Logo del Circuito -->
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo con enlace a la página de inicio -->
             <div class="logo">
-                <img src="./assets/icons/logo f1 españa.png" alt="Logo del Circuito"> <!-- Imagen del logo del circuito -->
+                <a href="index.html">
+                    <img src="./assets/icons/logo f1 españa.png" alt="Logo del Circuito">
+                </a>
             </div>
-            <!-- Navegación -->
-            <nav class="navigation"> <!-- Navegación con enlaces a otras secciones -->
+            <!-- Navegación principal -->
+            <nav class="navigation">
                 <ul>
                     <li><a href="#">Información</a></li> <!-- Enlace a la sección de información -->
-                    <li><a href="#">Tienda</a></li> <!-- Enlace a la tienda -->
+                    <li><a href="store.html">Tienda</a></li> <!-- Enlace a la tienda -->
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Imagen principal -->
-    <section class="main-image"> <!-- Sección para la imagen principal de la landing page -->
-        <img src="./assets/images/circuito madrid.jpeg" alt="Imagen principal del Circuito"> <!-- Imagen de marcador, reemplazar con la deseada -->
+    <section class="main-image">
+        <img src="./assets/images/circuito madrid.jpeg" alt="Imagen del circuito de Madrid">
     </section>
 
-    <!-- Bloque de texto debajo de la imagen principal -->
-    <section class="main-text"> <!-- Sección para el texto principal -->
-        <div class="text-container"> <!-- Contenedor del texto con márgenes y justificación -->
+    <!-- Texto principal -->
+    <section class="main-text">
+        <div class="text-container">
             <p>¡Vive la emoción del regreso de la Fórmula 1 a Madrid! Nuestro ambicioso Gran Premio, destinado a ser líder en el Calendario Internacional, está diseñado para cautivar tanto a aficionados como a equipos.</p>
             <p>Sumérgete en la fusión perfecta de deporte y espectáculo, donde cada momento es inolvidable. ¡Prepárate para vivir la adrenalina renovada de la F1 en la capital!</p>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer> <!-- Sección del footer -->
-        <p>&copy; 2025 Circuito F1 Madrid. Todos los derechos reservados.</p> <!-- Derechos reservados -->
+    <footer>
+        <p>&copy; 2025 Circuito F1 Madrid. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

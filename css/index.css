@@ -1,8 +1,8 @@
 /* Estilos generales */
 body {
-    margin: 0; /* Elimina el margen por defecto del navegador */
-    font-family: Arial, sans-serif; /* Fuente principal para el texto */
-    background-color: #f4f4f4; /* Color de fondo general */
+    margin: 0; /* Elimina márgenes por defecto */
+    font-family: Arial, sans-serif; /* Define la fuente principal */
+    background-color: #f4f4f4; /* Fondo claro para contraste */
     color: #333; /* Color del texto */
 }
 
@@ -11,66 +11,130 @@ body {
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
     padding: 10px 30px; /* Márgenes internos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 .header-container {
-    display: flex; /* Flexbox para organizar elementos */
-    justify-content: space-between; /* Logo a la izquierda, navegación a la derecha */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; /* Flexbox para organizar */
+    justify-content: space-between; /* Separación entre logo y menú */
+    align-items: center; /* Centrado vertical */
 }
 
-/* Logo */
 .logo img {
-    width: 100px; /* Tamaño del logo */
-    height: auto; /* Mantiene la proporción */
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene proporción */
+    cursor: pointer; /* Hace clickeable el logo */
 }
 
-/* Navegación */
 .navigation ul {
-    display: flex; /* Flexbox para alinear enlaces horizontalmente */
-    gap: 20px; /* Espaciado entre los enlaces */
-    margin: 0; /* Elimina margen */
+    display: flex; /* Organización horizontal */
+    gap: 20px; /* Espaciado entre elementos */
+    list-style: none; /* Sin viñetas */
+    margin: 0; /* Elimina márgenes */
     padding: 0; /* Elimina relleno */
-    list-style: none; /* Elimina puntos de la lista */
-}
-
-.navigation li {
-    display: inline; /* Asegura que los enlaces estén en línea */
 }
 
 .navigation a {
     text-decoration: none; /* Sin subrayado */
     color: white; /* Texto blanco */
-    font-weight: bold; /* Negrita para destacar los enlaces */
-    padding: 5px 10px; /* Espaciado interno de los enlaces */
-    transition: color 0.3s ease; /* Efecto de transición en el hover */
+    font-weight: bold; /* Negrita */
+    padding: 5px 10px; /* Espaciado interno */
+    transition: color 0.3s ease; /* Transición suave al pasar el cursor */
 }
 
 .navigation a:hover {
-    color: #D8232A; /* Color rojo al pasar el cursor */
+    color: #D8232A; /* Rojo destacado */
 }
 
-/* Imagen principal */
+/* Landing Page - Imagen principal */
 .main-image img {
     width: 100%; /* Imagen ocupa todo el ancho */
     height: 840px; /* Altura fija */
-    object-fit: cover; /* Recorta y ajusta la imagen para que encaje */
+    object-fit: cover; /* Recorta y ajusta */
 }
 
-/* Bloque de texto debajo de la imagen */
+/* Landing Page - Texto principal */
 .main-text {
-    display: flex; /* Usa flexbox para centrar el contenedor */
-    justify-content: center; /* Centra horizontalmente el texto */
-    margin: 20px 0; /* Espaciado superior e inferior */
+    display: flex; /* Centrado horizontal */
+    justify-content: center; /* Alinea texto al centro */
+    margin: 20px 0; /* Espaciado vertical */
 }
 
 .text-container {
-    width: 33%; /* Ocupa un tercio del ancho de la pantalla */
-    text-align: justify; /* Justifica el texto a la izquierda */
-    font-size: 1rem; /* Tamaño estándar del texto */
+    width: 33%; /* Limita el ancho del texto */
+    text-align: justify; /* Justificación */
+    font-size: 1rem; /* Tamaño estándar */
     line-height: 1.5; /* Espaciado entre líneas */
-    color: #555; /* Color ligeramente más claro para el texto */
+    color: #555; /* Color del texto */
+}
+
+/* Tienda - Contenedor principal */
+.store-container {
+    display: flex; /* Layout horizontal */
+    height: calc(100vh - 70px); /* Altura menos header */
+}
+
+/* Tienda - Imagen */
+.store-image-container {
+    width: 50%; /* Ocupa la mitad izquierda */
+    overflow: hidden; /* Oculta contenido desbordante */
+}
+
+.store-image {
+    width: 100%; /* Imagen ocupa todo el contenedor */
+    height: 100%; /* Altura total del contenedor */
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+/* Tienda - Formulario */
+.store-form-container {
+    width: 50%; /* Ocupa la mitad derecha */
+    display: flex; /* Centrado interno */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+.store-form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 400px; /* Máximo tamaño */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.store-form h2 {
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.5rem; /* Tamaño del título */
+    text-align: center; /* Centrado */
+    color: #333; /* Color del texto */
+}
+
+.store-form input {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 15px; /* Espaciado inferior */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo */
+}
+
+.store-form button {
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de texto */
+    background-color: #D8232A; /* Color principal */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Puntero clickeable */
+    transition: background-color 0.3s ease; /* Transición al hover */
+}
+
+.store-form button:hover {
+    background-color: #a11d20; /* Color más oscuro al pasar el cursor */
 }
 
 /* Footer */
@@ -80,4 +144,8 @@ footer {
     text-align: center; /* Centra el texto */
     padding: 15px 0; /* Espaciado interno */
     font-size: 0.9rem; /* Tamaño de texto reducido */
+    position: relative; /* Ajusta la posición */
+    bottom: 0; /* Lo fija al final */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
