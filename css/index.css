@@ -8,6 +8,11 @@ body {
 
 /* Header */
 .header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Asegura que esté pegado al borde superior */
+    left: 0; /* Alinea el header al borde izquierdo */
+    width: 98%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que esté encima del contenido */
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
     padding: 10px 30px; /* Márgenes internos */
@@ -23,7 +28,6 @@ body {
 .logo img {
     width: 100px; /* Ajusta el tamaño del logo */
     height: auto; /* Mantiene proporción */
-    cursor: pointer; /* Hace clickeable el logo */
 }
 
 .navigation ul {
@@ -44,6 +48,11 @@ body {
 
 .navigation a:hover {
     color: #D8232A; /* Rojo destacado */
+}
+
+/* Ajuste para el contenido principal para evitar solapamiento */
+main {
+    margin-top: 70px; /* Altura del header para separar el contenido */
 }
 
 /* Landing Page - Imagen principal */
@@ -81,8 +90,8 @@ body {
 }
 
 .store-image {
-    width: 100%; /* Imagen ocupa todo el contenedor */
-    height: 100%; /* Altura total del contenedor */
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Ajuste de la imagen */
 }
 
@@ -112,30 +121,23 @@ body {
 }
 
 .store-form input {
-    width: calc(100% - 20px); /* Ajusta ancho con margen incluido */
-    margin-bottom: 15px; /* Espaciado inferior */
-    margin-right: 20px; /* Margen derecho adicional */
+    width: calc(100% - 10px); /* Ajuste de ancho con márgenes */
+    margin-bottom: 15px; /* Espaciado entre inputs */
     padding: 10px; /* Espaciado interno */
     font-size: 1rem; /* Tamaño del texto */
-    border: 1px solid #ccc; /* Borde gris */
+    border: 1px solid #ccc; /* Borde */
     border-radius: 5px; /* Bordes redondeados */
     background-color: #f9f9f9; /* Fondo */
 }
 
 .store-form button {
-    width: 100%; /* Botón ocupa todo el ancho */
-    padding: 10px; /* Espaciado interno */
-    font-size: 1rem; /* Tamaño de texto */
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
     background-color: #D8232A; /* Color principal */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Puntero clickeable */
-    transition: background-color 0.3s ease; /* Transición al hover */
-}
-
-.store-form button:hover {
-    background-color: #a11d20; /* Color más oscuro al pasar el cursor */
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Footer */
