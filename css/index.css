@@ -174,13 +174,14 @@ main {
 }
 
 .highlight-text {
-    font-family: 'RacingSansOne', Arial, sans-serif; /* Aplica la fuente local */
-    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-family: 'Racing Sans One', Arial, sans-serif; /* Fuente específica */
+    font-size: 1.5rem; /* Tamaño del texto */
     font-weight: bold; /* Negrita */
-    color: #D8232A; /* Color rojo */
+    color: #D8232A; /* Rojo */
     text-align: left; /* Alinea el texto a la izquierda */
     margin-bottom: 15px; /* Espaciado inferior */
 }
+
 
 /* Página 404 - Estilos exclusivos */
 .error-body {
@@ -191,7 +192,7 @@ main {
     margin: 0; /* Elimina márgenes por defecto */
     background-color: #1D1D1D; /* Fondo oscuro */
     color: #FFFFFF; /* Texto en blanco */
-    font-family: 'RacingSansOne', Arial, sans-serif; /* Fuente específica */
+    font-family: 'Racing Sans One', Arial, sans-serif; /* Fuente específica */
     text-align: center; /* Centra el texto */
 }
 
@@ -214,6 +215,7 @@ main {
     color: #FFFFFF; /* Texto de los enlaces en blanco */
     text-decoration: underline; /* Subrayado para destacar enlaces */
     font-weight: bold; /* Resalta los enlaces */
+    font-family: Arial, sans-serif;
 }
 
 .error-link:hover {
