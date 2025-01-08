@@ -139,6 +139,46 @@ main {
     border: none;
     border-radius: 5px;
 }
+/* Nueva sección de imagen y texto */
+.image-text-section-2 {
+    display: grid; /* Usa grid para dividir la sección */
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
+    gap: 20px; /* Espaciado entre columnas */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin: 40px auto; /* Espaciado superior e inferior y centrado horizontal */
+    max-width: 1200px; /* Ancho máximo para la sección */
+    padding: 0 20px; /* Espaciado interno */
+}
+
+.image-container-2 {
+    grid-column: 2; /* Imagen ocupa la segunda columna */
+    display: flex; /* Centra la imagen */
+    justify-content: center;
+}
+
+.image-container-2 img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.image-text-section-2 .text-container-2 {
+    grid-column: 3; /* Texto ocupa la tercera columna */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #555; /* Color del texto */
+}
+.highlight-text {
+    font-family:  'RacingSansOne', Arial, sans-serif; /* Aplica la fuente local */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+    color: #D8232A; /* Color rojo */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
 
 /* Footer */
 footer {

@@ -1,10 +1,11 @@
-/* Importar tipografía local */
-@font-face {
-    font-family: 'MiFuenteLocal'; /* Nombre de la fuente personalizada */
-    src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2'); /* Ruta al archivo de fuente local */
-    font-weight: normal; /* Peso normal de la fuente */
-    font-style: normal; /* Estilo normal de la fuente */
+ /* Importar tipografía local */
+ @font-face {
+    font-family: 'RacingSansOne';
+    src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 /* Fuente remota desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Fuente Roboto desde Google */

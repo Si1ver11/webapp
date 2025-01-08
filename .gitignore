@@ -4,7 +4,7 @@
 # No tienen valor en un repositorio de código y deben ser ignorados.
 
 #Ignorar imágenes dentro de la carpeta assets
-/assets/images/*
+#/assets/images/*
 
 # Ignorar la carpeta node_modules
 node_modules
