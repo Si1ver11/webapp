@@ -11,7 +11,7 @@ body {
     position: fixed; /* Fija el header en la parte superior */
     top: 0; /* Asegura que esté pegado al borde superior */
     left: 0; /* Alinea el header al borde izquierdo */
-    width: 97%; /* Ocupa todo el ancho */
+    width: 97%; /* Ocupa el 97% del ancho */
     z-index: 1000; /* Asegura que esté encima del contenido */
     background-color: #222; /* Fondo oscuro */
     color: white; /* Texto blanco */
@@ -139,6 +139,7 @@ main {
     border: none;
     border-radius: 5px;
 }
+
 /* Nueva sección de imagen y texto */
 .image-text-section-2 {
     display: grid; /* Usa grid para dividir la sección */
@@ -171,13 +172,52 @@ main {
     line-height: 1.6; /* Espaciado entre líneas */
     color: #555; /* Color del texto */
 }
+
 .highlight-text {
-    font-family:  'RacingSansOne', Arial, sans-serif; /* Aplica la fuente local */
+    font-family: 'RacingSansOne', Arial, sans-serif; /* Aplica la fuente local */
     font-size: 1.5rem; /* Tamaño de fuente más grande */
     font-weight: bold; /* Negrita */
     color: #D8232A; /* Color rojo */
     text-align: left; /* Alinea el texto a la izquierda */
     margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Página 404 - Estilos exclusivos */
+.error-body {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    background-color: #1D1D1D; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto en blanco */
+    font-family: 'RacingSansOne', Arial, sans-serif; /* Fuente específica */
+    text-align: center; /* Centra el texto */
+}
+
+.error-container {
+    max-width: 600px; /* Limita el ancho del contenedor */
+}
+
+.error-title {
+    font-size: 5rem; /* Tamaño grande para el encabezado */
+    margin: 0; /* Elimina márgenes */
+    color: #D8232A; /* Rojo principal */
+}
+
+.error-message {
+    font-size: 1.5rem; /* Tamaño del texto descriptivo */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.error-link {
+    color: #FFFFFF; /* Texto de los enlaces en blanco */
+    text-decoration: underline; /* Subrayado para destacar enlaces */
+    font-weight: bold; /* Resalta los enlaces */
+}
+
+.error-link:hover {
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
 }
 
 /* Footer */

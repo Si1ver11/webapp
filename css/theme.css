@@ -1,19 +1,13 @@
- /* Importar tipografía local */
- @font-face {
-    font-family: 'RacingSansOne';
-    src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+/* Importar tipografía local */
+@font-face {
+    font-family: 'RacingSansOne'; /* Nombre de la fuente local */
+    src: url('./assets/fonts/RacingSansOne-Regular.woff2') format('woff2'); /* Ruta al archivo de fuente local */
+    font-weight: normal; /* Peso normal */
+    font-style: normal; /* Estilo normal */
 }
-
 
 /* Fuente remota desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Fuente Roboto desde Google */
-
-/* Aplicación de las fuentes */
-body {
-    font-family: 'MiFuenteLocal', 'Roboto', Arial, sans-serif; /* Prioridad: fuente local, luego Roboto, y por último Arial */
-}
 
 /* Definición de los colores del tema */
 :root {
@@ -23,8 +17,9 @@ body {
     --background-color: #F4F4F4; /* Color de fondo (gris claro) */
 }
 
-/* Aplicar colores del tema al cuerpo */
+/* Aplicación de las fuentes */
 body {
+    font-family: 'RacingSansOne', 'Roboto', Arial, sans-serif; /* Prioridad: fuente local, luego remota */
     background-color: var(--background-color); /* Fondo del cuerpo */
     color: var(--text-color); /* Color del texto */
 }

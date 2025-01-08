@@ -1,65 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metaetiquetas esenciales -->
     <meta charset="UTF-8"> <!-- Define el conjunto de caracteres de la página -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive -->
     <title>Error 404 - Página no encontrada</title> <!-- Título de la pestaña del navegador -->
     <link rel="stylesheet" href="./css/index.css"> <!-- Enlace a la hoja de estilos principal -->
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" sizes="96x96" href="https://ik.imagekit.io/Silver11/Trabajo%20web/favicon-96x96.png?updatedAt=1736285277849">
-    <style>
-       
-
-        /* Estilos específicos para la página de error 404 */
-
-        body {
-            display: flex; /* Usa flexbox para centrar contenido */
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            height: 100vh; /* Ocupa toda la altura de la ventana */
-            margin: 0; /* Elimina márgenes por defecto */
-            background-color: #1D1D1D; /* Fondo oscuro */
-            color: #FFFFFF; /* Texto en blanco */
-            font-family: Arial, sans-serif; /* Fuente general */
-            text-align: center; /* Centra el texto */
-        }
-
-        .error-container {
-            max-width: 600px; /* Limita el ancho del contenedor */
-        }
-
-        h1 {
-            font-size: 5rem; /* Tamaño grande para el encabezado */
-            margin: 0; /* Elimina márgenes */
-            color: #D8232A; /* Rojo principal */
-            font-family: 'RacingSansOne', Arial, sans-serif; /* Usa la fuente local */
-        }
-
-        p {
-            font-size: 1.5rem; /* Tamaño del texto descriptivo */
-            margin: 20px 0; /* Espaciado vertical */
-        }
-
-        a {
-            color: #FFFFFF; /* Texto de los enlaces en blanco */
-            text-decoration: underline; /* Subrayado para destacar enlaces */
-            font-weight: bold; /* Resalta los enlaces */
-        }
-
-        a:hover {
-            text-decoration: none; /* Elimina el subrayado al pasar el cursor */
-        }
-    </style>
-
+    <link rel="icon" type="image/png" sizes="96x96" href="https://ik.imagekit.io/Silver11/Trabajo%20web/favicon-96x96.png?updatedAt=1736285277849"> <!-- Favicon -->
 </head>
-<body>
-    <div class="error-container">
-        <!-- Encabezado del error -->
-        <h1>404</h1> <!-- Título que indica el error -->
-        <!-- Mensaje descriptivo -->
-        <p>Lo sentimos, la página que buscas no existe.</p>
-        <!-- Enlace para volver a la página principal -->
-        <p><a href="index.html">Volver a la página principal</a></p>
+<body class="error-body"> <!-- Clase exclusiva para el body de la página 404 -->
+    <div class="error-container"> <!-- Contenedor principal para los elementos del error -->
+        <h1 class="error-title">404</h1> <!-- Título del error con estilo único -->
+        <p class="error-message">Lo sentimos, la página que buscas no existe.</p> <!-- Mensaje descriptivo -->
+        <p><a href="index.html" class="error-link">Volver a la página principal</a></p> <!-- Enlace para regresar al inicio -->
     </div>
 </body>
 </html>
