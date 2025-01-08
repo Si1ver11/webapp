@@ -5,7 +5,9 @@
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Ocupa toda la altura de la ventana */
     margin: 0; /* Elimina márgenes por defecto */
-    background: linear-gradient(135deg, #1D1D1D, #D8232A); /* Degradado en el fondo */
+    background: radial-gradient(circle, #D8232A, #1D1D1D 80%); /* Degradado radial inicial */
+    background-size: 150% 150%; /* Tamaño inicial del degradado */
+    animation: pulse-gradient 3s infinite ease-in-out; /* Animación de pulsación */
     color: #ffffff; /* Texto en blanco */
     font-family: 'Racing Sans One', Arial, sans-serif; /* Fuente específica */
     text-align: center; /* Centra el texto */
@@ -31,7 +33,8 @@
 .error-title {
     font-size: 4.5rem; /* Tamaño del título */
     margin: 0; /* Elimina márgenes */
-    color: #D8232A; /* Texto blanco */
+    color: #D8232A; /* Texto rojo */
+    animation: heartbeat 1.5s infinite; /* Animación de latido */
 }
 
 .error-message {
@@ -48,9 +51,44 @@
     text-decoration: none; /* Sin subrayado */
     font-weight: bold; /* Negrita */
     border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 .error-link:hover {
     background-color: #D8232A; /* Fondo rojo */
     color: #FFFFFF; /* Texto blanco */
+}
+
+/* Animaciones */
+
+/* Pulsación suave del degradado radial */
+@keyframes pulse-gradient {
+    0% {
+        background-size: 100% 100%; /* Tamaño inicial */
+        background-position: center; /* Centro */
+    }
+    50% {
+        background-size: 200% 200%; /* Expande el degradado */
+        background-position: center; /* Mantiene el centro */
+    }
+    100% {
+        background-size: 100% 100%; /* Vuelve al tamaño inicial */
+        background-position: center; /* Centro */
+    }
+}
+
+/* Latido del título */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    30% {
+        transform: scale(1.2); /* Aumenta el tamaño */
+    }
+    60% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+    100% {
+        transform: scale(1); /* Mantiene el tamaño original */
+    }
 }
