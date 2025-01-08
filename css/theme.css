@@ -1,7 +1,7 @@
 /* Importar tipografía local */
  @font-face {
     font-family: 'Racing Sans One';
-    src: url('assets\fonts\RacingSansOne-Regular.woff2') format('woff2');
+    src: url('assets/fonts/RacingSansOne-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
