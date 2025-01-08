@@ -1,0 +1,56 @@
+/* Página 404 - Estilos exclusivos */
+.error-body {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    background: linear-gradient(135deg, #1D1D1D, #D8232A); /* Degradado en el fondo */
+    color: #ffffff; /* Texto en blanco */
+    font-family: 'Racing Sans One', Arial, sans-serif; /* Fuente específica */
+    text-align: center; /* Centra el texto */
+}
+
+.error-container {
+    display: flex; /* Centra horizontalmente la caja */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.error-box {
+    background-color: rgba(41, 41, 41, 0.8); /* Fondo con transparencia */
+    padding: 30px 40px; /* Márgenes internos */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.error-title {
+    font-size: 4.5rem; /* Tamaño del título */
+    margin: 0; /* Elimina márgenes */
+    color: #D8232A; /* Texto blanco */
+}
+
+.error-message {
+    font-size: 1.5rem; /* Tamaño del texto descriptivo */
+    margin: 15px 0; /* Espaciado vertical */
+}
+
+.error-link {
+    display: inline-block; /* Se comporta como bloque en línea */
+    margin-top: 15px;
+    padding: 10px 20px; /* Márgenes internos del botón */
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #D8232A; /* Texto rojo */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.error-link:hover {
+    background-color: #D8232A; /* Fondo rojo */
+    color: #FFFFFF; /* Texto blanco */
+}

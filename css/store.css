@@ -1,0 +1,62 @@
+/* Tienda - Contenedor principal */
+.store-container {
+    display: flex; /* Layout horizontal */
+    height: calc(100vh - 70px); /* Altura menos header */
+}
+
+/* Tienda - Imagen */
+.store-image-container {
+    width: 50%; /* Ocupa la mitad izquierda */
+    overflow: hidden; /* Oculta contenido desbordante */
+}
+
+.store-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+/* Tienda - Formulario */
+.store-form-container {
+    width: 50%; /* Ocupa la mitad derecha */
+    display: flex; /* Centrado interno */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+.store-form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 400px; /* Máximo tamaño */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.store-form h2 {
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.5rem; /* Tamaño del título */
+    text-align: center; /* Centrado */
+    color: #333; /* Color del texto */
+}
+
+.store-form input {
+    width: calc(100% - 22px); /* Ajuste de ancho con márgenes */
+    margin-bottom: 15px; /* Espaciado entre inputs */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo */
+}
+
+.store-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #D8232A; /* Color principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
