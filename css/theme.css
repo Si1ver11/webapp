@@ -19,7 +19,7 @@
 
 /* Aplicación de las fuentes */
 body {
-    font-family: 'RacingSansOne', 'Roboto', Arial, sans-serif; /* Prioridad: fuente local, luego remota */
+    font-family: 'Racing Sans One', 'Roboto', Arial, sans-serif; /* Prioridad: fuente local, luego remota */
     background-color: var(--background-color); /* Fondo del cuerpo */
     color: var(--text-color); /* Color del texto */
 }
